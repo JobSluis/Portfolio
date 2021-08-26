@@ -1,15 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 :root {
     --primary-colour: hsl(240, 29%, 8%);
     --secondary-colour: hsl(245, 29%, 9%);
     --primary-text-colour: hsla(0, 0%, 100%, 0.75);
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
 .content-selection {
