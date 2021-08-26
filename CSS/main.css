@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-colour: hsl(240, 29%, 8%);
+    --secondary-colour: hsl(245, 29%, 9%);
+    --primary-text-colour: hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-selection {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    background-image: url('../Images/main_image.jpg');
+    overflow: hidden;
+    position: fixed;
+}
+
+.parallax-item {
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.category {
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    background-color: var(--primary-colour);
+}
+
+
+/* On category child hover. */
+.category:hover {
+    background-color: hsla(240, 30%, 8%, 0.5);
+}
+
+.projects {
+    pointer-events: none;
+}
+
+/* On projects child hover. */
+.projects:hover .left{
+    transition: 0.25s;
+    opacity: 0;
+}
+
+.labratory {
+    pointer-events: none;
+}
+
+/* On labratory child hover. */
+.labratory:hover .middle {
+    transition: 0.25s;
+    opacity: 0;
+}
+
+.about {
+    pointer-events: none;
+}
+
+/* On about child hover. */
+.about:hover .right {
+    transition: 0.25s;
+    opacity: 0;
+}
+
+.lane {
+    transition: opacity 5s;
+}
+
+.category-title {
+    z-index: 1;
+    pointer-events: auto;
+    color: var(--primary-text-colour);
+}
+
+.category-title a{
+    color: var(--primary-text-colour);
+    text-decoration: none;
+}
