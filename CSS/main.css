@@ -3,8 +3,9 @@
 :root {
     --primary-colour: hsl(240, 29%, 8%);
     --secondary-colour: hsl(245, 29%, 9%);
+    --tertiary-colour: hsl(244, 79%, 35%);
+    --quaternary-colour: hsl(283, 79%, 35%);
     --primary-text-colour: hsla(0, 0%, 100%, 0.75);
-    --hwa: hsl(276, 79%, 35%);
 }
 
 * {
@@ -103,7 +104,7 @@
     border: hidden;
     border-radius: 10%;
     height: 5px;
-    background: linear-gradient(to right, hsl(244, 79%, 35%), hsl(283, 79%, 35%));
+    background: linear-gradient(to right, var(--tertiary-colour), var(--quaternary-colour));
     transform: scale(0, 1);
     transform-origin: 0% 100%;
     transition: transform 0.7s ease;
