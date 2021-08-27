@@ -33,7 +33,6 @@
     background-color: var(--primary-colour);
 }
 
-
 /* On category child hover. */
 .category:hover {
     background-color: hsla(240, 30%, 8%, 0.5);
