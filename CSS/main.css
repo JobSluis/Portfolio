@@ -40,7 +40,6 @@
     }
 
     .category-title {
-        z-index: 1;
         pointer-events: auto;
         color: var(--primary-text-colour);
     }
@@ -138,7 +137,6 @@
     }
     
     .category-title {
-        z-index: 1;
         pointer-events: auto;
         color: var(--primary-text-colour);
     }
