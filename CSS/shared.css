@@ -13,7 +13,6 @@
     
     .cursor {
         display: hidden;
-        z-index: 1;
         width: 10px;
         height: 10px;
         background-color: hsla(0, 0%, 100%, 0.75);
@@ -24,7 +23,6 @@
     }
     
     .cursor-circle {
-        z-index: 1;
         width: 20px;
         height: 20px;
         border: 1px solid hsla(0, 0%, 90%, 0.10);
@@ -33,5 +31,39 @@
         pointer-events: none;
         transition: 200ms;
         transition-timing-function: ease-out;
+    }
+
+    header {
+        z-index: 1;
+        height: 10vh;
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    .navigation-items {
+        list-style: none;
+    }
+    
+    .navigation-items .navigation-item {
+        display: inline-block;
+        padding: 0 1.2rem;
+        font-size: 1.5rem;
+    }
+    
+    .navigation-items .navigation-item a {
+        transition: 0.5s;
+        color: hsla(0, 0%, 100%, 0.75);
+        text-decoration: none;
+        
+    }
+    
+    .navigation-items .navigation-item a:hover {
+        background: linear-gradient(to right, hsl(244, 79%, 35%), hsl(283, 79%, 35%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
