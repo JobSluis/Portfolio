@@ -35,7 +35,7 @@
         background: linear-gradient(var(--primary-colour) 1%, rgba(14, 14, 26, 0.9) 50%, var(--primary-colour) 70%), url(../Images/main_image_part_2.jpg);
     }
 
-    .about {
+    .resume {
         background: linear-gradient(var(--primary-colour) 1%, rgba(14, 14, 26, 0.9) 50%, var(--primary-colour) 70%), url(../Images/main_image_part_3.jpg);
     }
 
@@ -102,32 +102,33 @@
         background-color: hsla(240, 30%, 8%, 0.5);
     }
     
-    .projects {
-        pointer-events: none;
-    }
-    
-    /* On projects child hover. */
-    .projects:hover .left{
-        transition: 0.25s;
-        opacity: 0;
-    }
-    
     .labratory {
         pointer-events: none;
     }
     
     /* On labratory child hover. */
-    .labratory:hover .middle {
+    .labratory:hover .left
+     {
         transition: 0.25s;
         opacity: 0;
     }
-    
-    .about {
+
+    .projects {
         pointer-events: none;
     }
     
-    /* On about child hover. */
-    .about:hover .right {
+    /* On projects child hover. */
+    .projects:hover .middle{
+        transition: 0.25s;
+        opacity: 0;
+    }
+
+    .resume {
+        pointer-events: none;
+    }
+    
+    /* On resume child hover. */
+    .resume:hover .right {
         transition: 0.25s;
         opacity: 0;
     }
@@ -139,6 +140,9 @@
     .category-title {
         pointer-events: auto;
         color: var(--primary-text-colour);
+        text-transform: uppercase;
+        letter-spacing: 0.25rem;
+        font-size: 1.2rem;
     }
     
     .category-title a{
@@ -155,6 +159,7 @@
         border: hidden;
         border-radius: 10%;
         height: 5px;
+        width: calc(100% - 3px);
         background: linear-gradient(to right, var(--tertiary-colour), var(--quaternary-colour));
         transform: scale(0, 1);
         transform-origin: 0% 100%;
