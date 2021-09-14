@@ -1,11 +1,3 @@
-:root {
-    --primary-colour: hsl(240, 29%, 8%);
-    --secondary-colour: hsl(245, 29%, 9%);
-    --tertiary-colour: hsl(244, 79%, 35%);
-    --quaternary-colour: hsl(283, 79%, 35%);
-    --primary-text-colour: hsla(0, 0%, 100%, 0.75);
-}
-
 @media only screen and (max-width: 600px) {
     .content-selection {
         height: 300vh;

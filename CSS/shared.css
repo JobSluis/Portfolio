@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root {
+    --primary-colour: hsl(240, 29%, 8%);
+    --secondary-colour: hsl(245, 29%, 9%);
+    --tertiary-colour: hsl(244, 79%, 35%);
+    --quaternary-colour: hsl(283, 79%, 35%);
+    --primary-text-colour: hsla(0, 0%, 100%, 0.75);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -68,7 +76,7 @@
         -webkit-text-fill-color: transparent;
     }
 
-    .navigation-items .navigation-item .contact-slider {
+    .contact-slider {
         border: 0;
         background: transparent;
         transition: 0.5s;
@@ -76,22 +84,42 @@
         color: hsla(0, 0%, 100%, 0.75);
     }
 
-    .navigation-items .navigation-item .contact-slider:hover {
+    .contact-slider:hover {
         background: linear-gradient(to right, hsl(244, 79%, 35%), hsl(283, 79%, 35%));
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
-    .contact-form {
+    .side-menu {
         position: fixed;
+        top: 0;
+        right: -100vw;
+        background-color: #0d0d18;
+        transition: right 1s;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .close-form {
+        transform: translateX(1.2rem);
+        padding-top: 1.2rem;
+        font-size: 2rem;
+    }
+
+    .contact-form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        width: 33vw;
-        right: 0;
-        background-color: var(--primary-colour);
+    }
+
+    .form-item {
+        padding: 1rem;
+        margin: 3rem;
+        background-color: hsl(244, 32%, 9%);
+        border: none;
+        border-radius: 15px;
+        color: var(--primary-text-colour);
     }
 }

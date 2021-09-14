@@ -17,12 +17,16 @@
                 <ul class="navigation-items">
                     <li class="navigation-item"><a href=""><i class='bx bxl-github'></i></a></li>
                     <li class="navigation-item"><a href=""><i class='bx bxl-linkedin-square'></i></a></li>
-                    <li class="navigation-item"><button class="contact-slider"><i class='bx bx-envelope'></i></button></li>
-                    <form class="contact-form" action="PHP/email.php" method="POST">
-                        <input type="email" name="" id="">
-                        <input type="text">
-                        <input type="button" value="">
-                    </form>
+                    <li class="navigation-item"><button class="contact-slider open-form" onclick="openContactForm()"><i class='bx bx-envelope'></i></button></li>
+                    <nav class="side-menu">
+                        <button class="contact-slider close-form" onclick="closeContactForm()"><i class='bx bx-chevrons-right'></i></i></button>
+                        <form class="contact-form close-form" action="PHP/email.php" method="POST">
+                            <input class="form-item email-input" type="email" name="" id="" placeholder="E-Mail...">
+                            <input class="form-item subject-input" type="text" placeholder="Subject...">
+                            <input class="form-item message-input" type="text" placeholder="Write your message here...">
+                            <input class="form-item submit-button" type="button" value="">
+                        </form>
+                    </nav>
                 </ul>
             </nav>
         </header>
@@ -49,12 +53,11 @@
                 <img src="./Images/parallax_image_7.png" data-speed="3" class="right lane parallax-item">
                 <img src="./Images/parallax_image_8.png" data-speed="0" class="right lane parallax-item">
                 <h2 class="category-title">
-                    <a href="">Résumé </a>
+                    <a href="">Résumé</a>
                     <hr class="title-underline">
                 </h2>
             </section>
         </section>
     </body>
     <script src="Scripts/scripts.js"></script>
-    <script src="Scripts/cursor.js"></script>
 </html>
