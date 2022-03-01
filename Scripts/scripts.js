@@ -34,3 +34,8 @@ function closeContactForm() {
     const formMenu = document.querySelector('.side-menu');
     formMenu.setAttribute('style', 'right: -100vw;')
 }
+
+function FadeContentOut() {
+    const formMenu = document.querySelector('.content-selection');
+    formMenu.setAttribute('style', 'opacity: 0;')
+}
