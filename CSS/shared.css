@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
 
 :root {
     --primary-colour: hsl(240, 29%, 8%);
@@ -6,12 +7,13 @@
     --tertiary-colour: hsl(244, 79%, 35%);
     --quaternary-colour: hsl(283, 79%, 35%);
     --primary-text-colour: hsla(0, 0%, 100%, 0.75);
+    --secondary-text-colour: hsl(243, 32%, 14%);
 }
 
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Chivo', sans-serif;
 }
 
 @media only screen and (min-width: 600px) {
@@ -48,9 +50,26 @@
         height: 10vh;
         width: 100vw;
         position: fixed;
+    }
+
+    nav {
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
         align-items: center;
+        padding: 2rem;
+    }
+
+    .brand {
+        text-transform: uppercase;
+        letter-spacing: 0.20rem;
+        font-size: 0.9rem;
+        padding-left: 1.2rem;
+        font-weight: 600;
+    }
+
+    .brand a {
+        color: var(--primary-text-colour);
+        text-decoration: none;
     }
 
     .navigation-items {
@@ -61,19 +80,22 @@
         display: inline-block;
         padding: 0 1.2rem;
         font-size: 1.5rem;
+        transition: 1s;
     }
     
     .navigation-items .navigation-item a {
-        transition: 0.5s;
+        transition: 1s;
         color: hsla(0, 0%, 100%, 0.75);
+        font-size: 1.5rem;
         text-decoration: none;
+    }
+
+    .navigation-item:hover{
+        transform: scale(1.05);
     }
     
     .navigation-items .navigation-item a:hover {
-        background: linear-gradient(to right, hsl(244, 79%, 35%), hsl(283, 79%, 35%));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: white;
     }
 
     .contact-slider {
@@ -85,41 +107,19 @@
     }
 
     .contact-slider:hover {
-        background: linear-gradient(to right, hsl(244, 79%, 35%), hsl(283, 79%, 35%));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: white;
     }
 
-    .side-menu {
+    footer {
         position: fixed;
-        top: 0;
-        right: -100vw;
-        background-color: #0d0d18;
-        transition: right 1s;
-        height: 100vh;
+        bottom: 0;
         width: 100vw;
+        padding: 2rem;
     }
 
-    .close-form {
-        transform: translateX(1.2rem);
-        padding-top: 1.2rem;
-        font-size: 2rem;
-    }
-
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .form-item {
-        padding: 1rem;
-        margin: 3rem;
-        background-color: hsl(244, 32%, 9%);
-        border: none;
-        border-radius: 15px;
-        color: var(--primary-text-colour);
+    .copyright-notice {
+        color: hsla(0, 0%, 100%, 0.459);
+        padding-left: 1.2rem;
+        font-size: 0.7rem;
     }
 }

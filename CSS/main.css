@@ -23,7 +23,7 @@
         background: linear-gradient(var(--primary-colour) 1%, rgba(14, 14, 26, 0.9) 50%, var(--primary-colour) 70%), url(../Images/main_image_part_1.jpg);
     }
 
-    .labratory {
+    .laboratory {
         background: linear-gradient(var(--primary-colour) 1%, rgba(14, 14, 26, 0.9) 50%, var(--primary-colour) 70%), url(../Images/main_image_part_2.jpg);
     }
 
@@ -68,6 +68,7 @@
         background-image: url('../Images/main_image_full.jpg');
         overflow: hidden;
         position: fixed;
+        transition: 1s;
     }
     
     .parallax-item {
@@ -83,10 +84,12 @@
     .category {
         pointer-events: none;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         transition: 1s;
         background-color: var(--primary-colour);
+        box-shadow: inset 0 0 50px 5px hsl(240, 29%, 8%);
     }
     
     /* On category child hover. */
@@ -94,19 +97,18 @@
         background-color: hsla(240, 30%, 8%, 0.5);
     }
     
-    .labratory {
-        pointer-events: none;
-    }
-    
-    /* On labratory child hover. */
-    .labratory:hover .left
+    /* On laboratory child hover. */
+    .laboratory:hover .left
      {
         transition: 0.25s;
         opacity: 0;
     }
 
-    .projects {
-        pointer-events: none;
+    /* On laboratory child hover. */
+    .laboratory:hover .description
+     {
+        transition: 0.25s;
+        opacity: 0;
     }
     
     /* On projects child hover. */
@@ -115,12 +117,20 @@
         opacity: 0;
     }
 
-    .resume {
-        pointer-events: none;
+    /* On projects child hover. */
+    .projects:hover .description{
+        transition: 0.25s;
+        opacity: 0;
     }
     
     /* On resume child hover. */
     .resume:hover .right {
+        transition: 0.25s;
+        opacity: 0;
+    }
+
+    /* On resume child hover. */
+    .resume:hover .description {
         transition: 0.25s;
         opacity: 0;
     }
@@ -156,5 +166,12 @@
         transform: scale(0, 1);
         transform-origin: 0% 100%;
         transition: transform 0.7s ease;
+    }
+
+    .description {
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--secondary-text-colour);
+        transition: 0.9s;
     }
   }
