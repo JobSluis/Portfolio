@@ -1,64 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="CSS/main.css">
-        <link rel="stylesheet" href="CSS/shared.css">
-        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Job van der Sluis</title>
-    </head>
-    <body>
-        <header>
-            <div class="cursor"></div>
-            <div class="cursor-circle"></div>
-            <nav>
-                <h2 class="brand"><a href="">Job v.d. Sluis</a></h2>
-                <ul class="navigation-items">
-                    <li class="navigation-item"><a href=""><i class='bx bxl-github'></i></a></li>
-                    <li class="navigation-item"><a href=""><i class='bx bxl-linkedin-square'></i></a></li>
-                    <li class="navigation-item"><button class="contact-slider open-form" onclick="openContactForm()"><i class='bx bx-envelope'></i></button></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="content-selection">
-            <section class="category laboratory">
-                <div class="category-colour-cover"></div>
-                <img src="./Images/parallax_image_1.png" data-speed="1" class="left lane parallax-item">
-                <img src="./Images/parallax_image_2.png" data-speed="3" class="left lane parallax-item">
-                <img src="./Images/parallax_image_3.png" data-speed="0" class="left lane parallax-item">
-                <h2 class="category-title">
-                    <a href="">Laboratory</a>
-                    <hr class="title-underline">
-                </h2>
-                <span class="description">Studies & Experiments</span>
-            </section>
-            <section class="category projects">
-                <div class="category-colour-cover"></div>
-                <img src="./Images/parallax_image_4.png" data-speed="-1" class="middle lane parallax-item">
-                <img src="./Images/parallax_image_5.png" data-speed="-1" class="middle lane parallax-item">
-                <img src="./Images/parallax_image_6.png" data-speed="-4" class="middle lane parallax-item">
-                <h2 class="category-title">
-                    <a href="">Projects</a>
-                    <hr class="title-underline">
-                </h2>
-                <span class="description">Finished Project Collection</span>
-            </section>
-            <section class="category resume">
-                <div class="category-colour-cover"></div>
-                <img src="./Images/parallax_image_7.png" data-speed="3" class="right lane parallax-item">
-                <img src="./Images/parallax_image_8.png" data-speed="0" class="right lane parallax-item">
-                <h6 class="category-title">
-                    <a onclick="FadeContentOut()">Résumé</a>
-                    <hr class="title-underline">
-                </h6>
-                <span class="description">Personal Details</span>
-            </section>
+
+<head>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/shared.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="manifest" href="Manifests/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job van der Sluis</title>
+</head>
+
+<body>
+
+    <!-- Pre-loader -->
+    <!-- <div class="preloader"></div> -->
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-circle"></div>
+
+    <!-- Header & Socials -->
+    <header>
+        <nav>
+            <h2 class="brand"><a href="">Job v.d. Sluis</a></h2>
+            <ul class="navigation-items">
+                <li class="navigation-item"><a href=""><i class='bx bxl-github'></i></a></li>
+                <li class="navigation-item"><a href=""><i class='bx bxl-linkedin-square'></i></a></li>
+                <li class="navigation-item"><a href=""><i class='bx bxl-twitter'></i></a></li>
+                <li class="navigation-item"><a href=""><i class='bx bxl-slack'></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content-selection">
+
+        <!-- Laboratory Section -->
+        <section class="category laboratory">
+            <div class="category-colour-cover"></div>
+            <img src="./Images/parallax_image_1.png" data-speed="1" class="left lane parallax-item">
+            <img src="./Images/parallax_image_2.png" data-speed="3" class="left lane parallax-item">
+            <img src="./Images/parallax_image_3.png" data-speed="0" class="left lane parallax-item">
+            <h2 class="category-title">
+                <a href="Pages/laboratory.html">Laboratory</a>
+                <hr class="title-underline">
+            </h2>
+            <span class="description">Studies & Experiments</span>
         </section>
-        <footer>
-            <span class="copyright-notice">&copy; 2022 Job van der Sluis. All rights reserved.</span>
-        </footer>
-    </body>
-    <script src="Scripts/scripts.js"></script>
+
+        <!-- Projects Section -->
+        <section class="category projects">
+            <div class="category-colour-cover"></div>
+            <img src="./Images/parallax_image_4.png" data-speed="-1" class="middle lane parallax-item">
+            <img src="./Images/parallax_image_5.png" data-speed="-1" class="middle lane parallax-item">
+            <img src="./Images/parallax_image_6.png" data-speed="-4" class="middle lane parallax-item">
+            <h2 class="category-title">
+                <a href="Pages/projects.html">Projects</a>
+                <hr class="title-underline">
+            </h2>
+            <span class="description">Finished Project Collection</span>
+        </section>
+
+        <!-- Resume Section -->
+        <section class="category resume">
+            <div class="category-colour-cover"></div>
+            <img src="./Images/parallax_image_7.png" data-speed="3" class="right lane parallax-item">
+            <img src="./Images/parallax_image_8.png" data-speed="0" class="right lane parallax-item">
+            <h6 class="category-title">
+                <a href="Pages/resume.html">Résumé</a>
+                <hr class="title-underline">
+            </h6>
+            <span class="description">Personal Details</span>
+        </section>
+
+    </section>
+
+    <!-- Footer & Copyright Notice -->
+    <footer>
+        <span class="copyright-notice">&copy; 2022 Job van der Sluis. All rights reserved.</span>
+    </footer>
+
+</body>
+
+<!-- Scripts -->
+<script src="Scripts/scripts.js"></script>
+
 </html>
